@@ -11,11 +11,23 @@ a {
 
 /* glass container */
 
-.glass-container {
+.glassContainer {
   max-width: 60vw;
   margin: 5dvh auto;
   padding: 30px;
   background: rgba(231, 227, 208, 0.822);
   border-radius: 8px;
   box-shadow: 2px 2px 5px rgba(126, 122, 108, 0.8);
+}
+
+@media screen and (max-width: 768px) {
+  .glassContainer {
+    max-width: 95vw;
+    padding: 15px;
+    background: rgba(231, 227, 208, 0.678);
+    border: none;
+    box-shadow: none;
+    border-radius: 5px;
+    margin-top: 5dvh;
+  }
 }

@@ -1,10 +1,10 @@
 import Image from "next/image";
-import Books from "@/components/books/books";
+import Bio from "@/components/bio/bio";
 
 export default function Home() {
   return (
     <>
-      <Books language="danish" />
+      <Bio />
     </>
   );
 }

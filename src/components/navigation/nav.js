@@ -11,6 +11,8 @@ const Navigation = () => {
 
   const pathname = usePathname();
   const isHomePage = pathname === "/";
+  const currentPage = pathname.substring(1);
+  console.log(currentPage);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);

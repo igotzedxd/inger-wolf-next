@@ -1,10 +1,15 @@
 import styles from "./books.module.css";
-import booksData from "/data/books.json";
+
+import Link from "next/link";
 import Image from "next/image";
 
-const Books = () => {
+import danishData from "/data/danishBooks.json";
+import englishData from "/data/englishBooks.json";
+
+const Books = ({ language }) => {
+  const booksData = language === "english" ? englishData : danishData;
   return (
-    <div className={styles.glassContainer}>
+    <div className={`${styles.glassContainer} glassContainer`}>
       <main className={styles.booksSec}>
         <div className={styles.books}>
           {booksData.map((book, index) => {
@@ -19,6 +24,16 @@ const Books = () => {
                 <div className={styles.bookText}>
                   <h3>{book.title}</h3>
                   {descriptionParagraphs}
+                  {language === "english" && (
+                    <Link className={styles.amazonLink} href={book.url} target="_blank">
+                      <Image
+                        src="/img/amazon-logo.png"
+                        alt="Amazon logo"
+                        width={200}
+                        height={200}
+                      />
+                    </Link>
+                  )}
                 </div>
               </div>
             );

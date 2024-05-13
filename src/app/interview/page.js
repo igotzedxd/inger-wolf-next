@@ -4,7 +4,7 @@ import Books from "@/components/books/books";
 export default function Home() {
   return (
     <>
-      <Books language="danish" />
+      <Books />
     </>
   );
 }
