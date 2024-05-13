@@ -14,7 +14,7 @@ const Books = () => {
             return (
               <div key={index} className={`${styles.book} ${styles[book.style]}`}>
                 <div className={styles.bookPic}>
-                  <Image src={book.img} alt={book.title} width={1000} height={1000} />
+                  <Image src={book.img} alt={book.title} width={500} height={500} />
                 </div>
                 <div className={styles.bookText}>
                   <h3>{book.title}</h3>
