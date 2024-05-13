@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Yellowtail&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Protest+Revolution&family=Shadows+Into+Light&display=swap");
+
+.burger {
+  display: grid;
+  place-content: center;
+  width: 20px;
+  height: 20px;
+}
+
+.headerHome {
+  position: absolute;
+  inset: 0;
+}
+
+.header {
+  max-width: 60vw;
+  margin: 0 auto;
+  margin-top: 2dvh;
+  height: 110px;
+  z-index: 99;
+}
+
+.heroHeading h1 {
+  font-family: "Protest Revolution", sans-serif;
+  letter-spacing: 3px;
+  font-size: 3rem;
+}
+
+.heroHeading p {
+  font-family: "Roboto", monospace;
+  font-size: 1rem;
+  padding-bottom: 2dvh;
+}
+
+.navBar {
+  -webkit-user-select: none; /* Chrome, Safari, Opera */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none; /* Standard syntax */
+}
+
+.navBar {
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row nowrap;
+  gap: 30px;
+  width: auto;
+  padding-bottom: 2dvh;
+  padding-top: 2dvh;
+  border-top: 1px solid rgb(182, 180, 180);
+}
+
+.navBar.showNav {
+  display: flex;
+  flex-flow: column nowrap;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100dvw;
+  height: 100dvh;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  background: #f9f7ed;
+  text-align: center;
+}
+
+.navBar span {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.navBar a,
+.navItem {
+  font-size: 1.2rem;
+  letter-spacing: 1.4px;
+  font-weight: 600;
+  color: rgb(167, 140, 84);
+}
+
+.navContact {
+  cursor: pointer;
+}
+
+.navBar a:hover {
+  transform: scale(1.1);
+}
+
+.navAbout {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 80px;
+}
+
+.showNav p {
+  display: none;
+}
+
+.navAbout a {
+  width: auto;
+  display: flex;
+  align-items: center;
+}
+
+.navAbout a h1 {
+  width: 100%;
+  text-align: left;
+}
+
+.contactInfo {
+  display: none;
+  position: absolute;
+  width: 30vw;
+  top: 120%;
+  text-align: center;
+  background: #5c070d93;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 99;
+  color: white;
+}
+
+.showContact {
+  display: block;
+}
+
+.active {
+  color: rgb(126, 82, 0);
+}
+
+.burgerBtn {
+  display: none;
+  position: absolute;
+  top: 70px;
+  right: 20vw;
+  z-index: 999;
+  font-size: 1.8rem;
+  font-weight: 400;
+  cursor: pointer;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: white;
+}
+
+.burgerBtnHome {
+  right: 0;
+}
+/* Media Queries */
+
+@media screen and (max-width: 1200px) {
+  .navSpace {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .navBar {
+    display: none;
+  }
+
+  .contactInfo {
+    top: 120%;
+    width: auto;
+  }
+
+  .navSpace {
+    display: none;
+  }
+
+  .burgerBtn {
+    display: block;
+    top: 90px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navBar {
+    flex-flow: column nowrap;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    border: none;
+  }
+
+  .navBar.show-nav {
+    flex-flow: column nowrap;
+  }
+
+  .navAbout {
+    justify-content: center;
+  }
+
+  .navAbout a h1 {
+    font-size: 3rem;
+  }
+
+  .burgerBtn {
+    right: 2.5vw;
+    top: 85px;
+  }
+
+  .fa-times {
+    position: fixed !important;
+  }
+
+  .contactP {
+    font-size: 0.9rem;
+  }
+}

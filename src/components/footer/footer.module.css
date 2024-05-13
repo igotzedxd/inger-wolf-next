@@ -1,0 +1,6 @@
+.footer {
+  height: 6dvh;
+  display: grid;
+  place-content: center;
+  background: rgba(231, 227, 208, 0.822);
+}
