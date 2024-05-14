@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Protest+Revolution&family=Shadows+Into+Light&display=swap");
+
+.nameSidebar {
+  -webkit-user-select: none; /* Chrome, Safari, Opera */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none; /* Standard syntax */
+}
+
+.nameSidebar {
+  width: 20%;
+  height: 100dvh;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  display: grid;
+  place-content: center;
+}
+
+.nameSidebar h2 {
+  font-family: "Protest Revolution", sansSerif;
+  letter-spacing: 6px;
+  font-size: 6rem;
+  font-weight: 400;
+  cursor: default;
+  color: #5c070d;
+  filter: opacity(0.8);
+}
+
+.leftSidebar {
+  left: 0;
+}
+
+.leftSidebar h2 {
+  writing-mode: vertical-lr;
+}
+
+.rightSidebar {
+  right: 0;
+}
+
+.rightSidebar h2 {
+  writing-mode: vertical-rl;
+  transform: scale(-1);
+}
+
+@media screen and (max-width: 768px) {
+  .nameSidebar {
+    display: none;
+  }
+  .nameSidebar h2 {
+    font-size: 5rem;
+  }
+}

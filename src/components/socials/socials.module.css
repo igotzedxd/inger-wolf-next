@@ -1,0 +1,47 @@
+/* Socials */
+
+.socialsContainer {
+  position: fixed;
+  right: 8vw;
+  display: flex;
+  flex-flow: column;
+  top: 50dvh;
+  transform: translate(50%, -50%);
+  gap: 20px;
+  text-align: center;
+  z-index: 2;
+}
+
+.socialIcon {
+  font-size: 3.2rem;
+  color: #5c070d;
+}
+
+@media screen and (max-width: 1024px) {
+  .socialsContainer {
+    position: absolute;
+    inset: 0;
+    top: 100px;
+    left: 20vw;
+    width: 200px;
+    gap: 10px;
+    transform: none;
+    flex-flow: row nowrap;
+    height: 1.6rem;
+  }
+
+  .socialsContainer a {
+    height: inherit;
+  }
+
+  .socialIcon {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .socialsContainer {
+    left: 10vw;
+    top: 95px;
+  }
+}

@@ -1,0 +1,49 @@
+/* Interview section */
+
+.interview {
+  max-width: inherit;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.interviewLeft {
+  height: 100%;
+  margin: 0 auto;
+  margin-bottom: 5dvh;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.interviewLeft img {
+  max-width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.interviewRight {
+  width: 100%;
+  object-fit: cover;
+  display: flex;
+  flex-flow: column;
+  gap: 1rem;
+}
+
+.interviewRight p {
+  letter-spacing: 1.2px;
+}
+
+.interviewRight h3,
+.interviewRight h4,
+.interviewRight h5 {
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+@media screen and (max-width: 1000px) {
+  .interviewRight p {
+    font-size: 0.8rem;
+  }
+}

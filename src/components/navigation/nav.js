@@ -22,6 +22,10 @@ const Navigation = () => {
     setContactOpen(!contactOpen);
   };
 
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <div className={`${isHomePage ? styles.headerHome : ""} ${styles.header} `}>
       <div className={styles.heroHeading}>
@@ -34,13 +38,21 @@ const Navigation = () => {
       </div>
 
       <div className={`${styles.navBar} ${menuOpen ? styles.showNav : null}`}>
-        <Link href="/bio">BIO</Link>
+        <Link onClick={closeMenu} href="/bio">
+          BIO
+        </Link>
         <p className={styles.navSpace}>|</p>
-        <Link href="/books">BØGER</Link>
+        <Link onClick={closeMenu} href="/books">
+          BØGER
+        </Link>
         <p className={styles.navSpace}>|</p>
-        <Link href="/english">ENGLISH</Link>
+        <Link onClick={closeMenu} href="/english">
+          ENGLISH
+        </Link>
         <p className={styles.navSpace}>|</p>
-        <Link href="/interview">INTERVIEW</Link>
+        <Link onClick={closeMenu} href="/interview">
+          INTERVIEW
+        </Link>
         <p className={styles.navSpace}>|</p>
         <span>
           <div onClick={toggleContact} className={`${styles.navItem} ${styles.navContact}`}>
@@ -65,7 +77,7 @@ const Navigation = () => {
             className={`${styles.burgerBtn} ${isHomePage ? styles.burgerBtnHome : null}`}
           />
         ) : (
-          <FaX onClick={toggleMenu} className={styles.burgerBtn} />
+          <FaX onClick={toggleMenu} className={`${styles.burgerBtn} ${styles.burgerX}`} />
         )}
       </div>
     </div>

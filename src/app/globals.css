@@ -22,12 +22,12 @@ a {
 
 @media screen and (max-width: 768px) {
   .glassContainer {
-    max-width: 95vw;
+    max-width: 80vw;
     padding: 15px;
     background: rgba(231, 227, 208, 0.678);
     border: none;
     box-shadow: none;
     border-radius: 5px;
-    margin-top: 5dvh;
+    margin-top: 2dvh;
   }
 }

@@ -1,10 +1,10 @@
 import Image from "next/image";
-import Books from "@/components/books/books";
+import Interview from "@/components/interview/interview";
 
 export default function Home() {
   return (
     <>
-      <Books />
+      <Interview />
     </>
   );
 }
