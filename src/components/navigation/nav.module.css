@@ -30,8 +30,9 @@
 }
 
 .heroHeading p {
-  font-size: 1rem;
+  font-size: 1.1rem;
   padding-bottom: 2dvh;
+  letter-spacing: 1.4px;
 }
 
 .navBar {
