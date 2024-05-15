@@ -89,6 +89,10 @@
     font-size: 1.2rem;
   }
 
+  .bookText p {
+    font-size: 0.9rem;
+  }
+
   .heroContainer {
     max-height: 30dvh;
     max-width: 100vw;

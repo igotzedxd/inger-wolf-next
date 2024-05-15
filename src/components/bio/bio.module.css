@@ -43,6 +43,7 @@
 .bioRight p {
   letter-spacing: 1.2px;
   line-height: 1.4;
+  font-size: 1rem;
 }
 @media screen and (max-width: 1024px) {
   .bio {
