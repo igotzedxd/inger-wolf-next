@@ -4,6 +4,7 @@ import styles from "./nav.module.css";
 import { FaBars, FaX } from "react-icons/fa6";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { protest } from "@/utils/fonts";
 
 const Navigation = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -31,7 +32,7 @@ const Navigation = () => {
       <div className={styles.heroHeading}>
         <div className={styles.navAbout}>
           <Link href="/">
-            <h1>Inger Wolf</h1>
+            <h1 className={protest.className}>Inger Wolf</h1>
           </Link>
           <p>Forfatter</p>
         </div>

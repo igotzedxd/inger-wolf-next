@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Protest+Revolution&family=Shadows+Into+Light&display=swap");
-
 .nameSidebar {
   -webkit-user-select: none; /* Chrome, Safari, Opera */
   -moz-user-select: none; /* Firefox */
@@ -18,7 +16,6 @@
 }
 
 .nameSidebar h2 {
-  font-family: "Protest Revolution", sans-Serif;
   letter-spacing: 6px;
   font-size: 6rem;
   font-weight: 400;
